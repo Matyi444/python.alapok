@@ -1,9 +1,4 @@
 from os import system
+import string
 
 system("cls")
-
-elsovaltozo = 12
-
-kiir = "A változó értéke: " + str(elsovaltozo)
-
-print(kiir)
