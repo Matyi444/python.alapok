@@ -2,20 +2,20 @@ from os import system
 
 system("cls")
 
-# 3.feladat prog_alapf.4
+# 4.feladat prog_alapf.5
 
-elsoSzam = int(input("Kérem az eső számot: "))
+elsoSzam = int(input("Kérem az első számot: "))
 masodikSzam = int(input("Kérem az második számot: "))
 
-osszeg = elsoSzam + masodikSzam
-kulonbseg = elsoSzam - masodikSzam
-szorzat = elsoSzam * masodikSzam 
-hanyados = elsoSzam / masodikSzam
+logikaikifejezes_1 = elsoSzam < masodikSzam
+logikaikifejezes_2 = masodikSzam < masodikSzam
 
-kiir = f"Két szám: {elsoSzam}, {masodikSzam}"
-kiir = kiir + f"\nösszeg: {osszeg}"
-kiir = kiir + f"\nkülönbség: {kulonbseg}"
-kiir = kiir + f"\nszorzat: {szorzat}"
-kiir = kiir + f"\nhányados: {hanyados}"
-
-print(kiir)
+if logikaikifejezes_1:
+    kiir =f"A második szám: {masodikSzam} a nagyobb."
+    print(kiir)
+elif logikaikifejezes_2:
+    kiir =f"Az első szám: {elsoSzam} a nagyobb."
+    print(kiir)
+else:
+    kiir = "A kétszám egyenlő"
+    print(kiir)
